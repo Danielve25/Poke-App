@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-      <section className='bg-[#F6F8FC]'>
-        <main className='outfit max-w-[1000px] overflow-y-auto mx-auto grid grid-cols-1 lg:grid-cols-[1fr_350px] h-screen ' >
+      <section className='bg-[#f8f8f8] overflow-y-auto h-screen'>
+        <main className='outfit max-w-[1400px] o mx-auto grid grid-cols-1 lg:grid-cols-[1fr_350px]  ' >
           <Pokemons/>
           <Aside/>
         </main>
