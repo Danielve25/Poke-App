@@ -19,7 +19,7 @@ const PokemonPreview = ({pokemonURL}) => {
                 />
             </header>
             <span className="text-sm text-slate-400">N° {pokemon?.id}</span>
-            <h4 className="text-lg">Name: {pokemon?.name}</h4>
+            <h4 className="text-lg">{pokemon?.name}</h4>
             <ul className="flex gap-2 justify-center">
                 <li>{pokemon?.types.map(type => type.type.name).join(', ')}</li>
             </ul>
