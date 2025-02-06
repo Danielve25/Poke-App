@@ -7,15 +7,15 @@ const Pokemons = () => {
   const [Allpokemons, setAllPokemons] = useState([])
 
   useEffect(() => {
-      axios.get('https://pokeapi.co/api/v2/pokemon?limit=898')
+      axios.get('https://pokeapi.co/api/v2/pokemon?limit=10')
       .then(({data}) => setAllPokemons(data.results))
       .then(() => console.log("se obtuvieron los pokemon"))
       .catch((err) => console.log("error al obtener datos"))
     }, [])
     return (
-        <section className="p-4 py-5">
+        <section className="p-4 py-5 w-max">
           <SearchBar/>
-          <PokemonList pokemons={Allpokemons}/>
+          <PokemonList pokemons={Allpokemons} />
         </section>
   )
 }
