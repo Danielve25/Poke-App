@@ -1,4 +1,5 @@
-import { IconSearch } from '@tabler/icons-react';
+
+import SearchBarIcon from '../assets/SearchIcon.svg'
 const SearchBar = () => {
   return (
         <form action="">
@@ -9,7 +10,7 @@ const SearchBar = () => {
                     className="outline-none flex-1" 
                 />
                 <button className="bg-red-500 p-2 rounded-xl shadow-lg shadow-red-500/50 hover:bg-red-400 transition-colors">
-                    <IconSearch color='white' stroke={3}/>
+                    <img src={SearchBarIcon} alt=""/>
                 </button>
             </div>
         </form>
