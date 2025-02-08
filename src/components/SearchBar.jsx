@@ -13,6 +13,7 @@ const SearchBar = () => {
                     <img src={SearchBarIcon} alt=""/>
                 </button>
             </div>
+            
         </form>
   )
 }
