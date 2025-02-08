@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { IconArrowLeft } from '@tabler/icons-react';
 import Pokemons from './components/Pokemons';
 import Aside from './components/Aside';
 function App() {
