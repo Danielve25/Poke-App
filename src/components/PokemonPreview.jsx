@@ -23,7 +23,7 @@ const PokemonPreview = ({pokemonURL}) => {
             <ul className="flex gap-2 justify-center">
                 {pokemon?.types.map((type) => (
                     <li
-                        className={`p-1 rounded-md px-2 text-white 
+                        className={`p-1 text-sm rounded-md px-2 text-white 
                         ${colorByType[type.type.name]}`}
                         key={type.type.name}
                     >

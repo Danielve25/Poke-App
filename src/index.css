@@ -7,3 +7,11 @@
 .pixelated{
     image-rendering: pixelated;
 }
+@media (max-width: 340px) {
+    .tabler-icon-search{
+        display: none;
+    }
+    .IconSearchButton{
+        display: none;
+    }
+}
