@@ -5,9 +5,13 @@ import PokemonList from "./PokemonList";
 //import SearchBarIcon from "../assets/SearchIcon.svg";
 //import { IconSearch } from "@tabler/icons-react";
 import IconSearch from "./icons/IconSearch";
+const INITIAL_LIMIT = 40;
+
 const Pokemons = () => {
   const [Allpokemons, setAllPokemons] = useState([]);
   const [pokemonName, setPokemonName] = useState("");
+  const [limit, setLimit] = useState(INITIAL_LIMIT);
+  
   const pokemonsByName = Allpokemons.filter((pokemon) =>
     pokemon.name.includes(pokemonName)
   );
@@ -41,7 +45,7 @@ const Pokemons = () => {
           </button>
         </div>
       </form>
-      <PokemonList pokemons={pokemonsByName} />
+      <PokemonList pokemons={pokemonsByName.slice(0, limit)} />
     </section>
   );
 };
